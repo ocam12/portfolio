@@ -1,0 +1,9 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+}

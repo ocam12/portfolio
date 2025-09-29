@@ -1,0 +1,11 @@
+.anchor{
+    padding: 0 2px 2px 2px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.anchor:hover{
+    border-bottom: 1px solid var(--primary-txt-color);
+}
