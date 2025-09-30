@@ -1,9 +1,7 @@
 .navbar{
     position: fixed;
-    top: 0;
-    right: 0;
+    top: min(3vh, 40px);
+    right: min(3vw, 40px);
     display: flex;
     gap: 50px;
-    margin-top: 20px;
-    margin-right: 20px;
 }

@@ -1,11 +1,17 @@
 .anchor{
     padding: 0 2px 2px 2px;
-    color: white;
+    color: var(--primary-txt-color);
     text-decoration: none;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     transition: 0.2s ease;
 }
 
 .anchor:hover{
-    border-bottom: 1px solid var(--primary-txt-color);
+    border-bottom: 2px solid var(--primary-txt-color);
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.anchor:active{
+    border-bottom: 2px solid var(--primary-txt-color);
 }
