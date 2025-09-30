@@ -1,5 +1,138 @@
-#about{
+#about {
+    position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: var(--secondary-bg-color);
+    background: linear-gradient(90deg, var(--secondary-bg-color), var(--tertiary-bg-color));
+    overflow: hidden; /* ensures images don’t scroll out */
+    padding-top: 15vh;
+    box-sizing: border-box;
+}
+
+#about h2 {
+    position: absolute;
+    top: min(4vh, 50px);
+    left: min(4vw, 50px);
+    font-size: 4rem;
+    color: var(--primary-txt-color);
+}
+
+#about h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-txt-color);
+    margin-top: 0.5rem;
+    border-radius: 2px;
+}
+
+.profile-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    width: 100vw;
+}
+
+.profile-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 200px;
+}
+
+.profile-caption {
+    font-size: 1.6rem;
+    color: var(--primary-txt-color);
+    align-self: center;
+    margin-bottom: 80px;
+    z-index: 600;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 100px;
+    margin-bottom: 100px;
+}
+
+.profile-text {
+    position: relative;
+    display: block;
+    font-size: 1.2rem;
+    width: min(900px, 80vw);
+    margin-bottom: 20px;
+    color: var(--secondary-txt-color);
+    line-height: 1.6;
+    z-index: 600;
+}
+
+.profile-subheader {
+    font-size: 1.6rem;
+    color: var(--primary-txt-color);
+}
+
+.skills-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5vh;
+    text-align: center;
+    z-index: 500;
+}
+
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 400;
+}
+
+.overlay-img {
+    position: absolute;
+    width: 200px;
+    pointer-events: none;
+    animation: popIn 0.3s ease forwards;
+}
+
+.overlay-img.exit {
+    animation: popOut 0.3s ease forwards;
+}
+
+@keyframes popIn {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes popOut {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+@media (max-width: 1250px){
+    #about{
+        height: 100%;
+    }
+
+    .profile-main {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .profile-info {
+        padding: 50px 20px;
+    }
 }
