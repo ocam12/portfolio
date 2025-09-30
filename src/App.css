@@ -1,8 +1,9 @@
 :root{
   --primary-bg-color: rgb(10, 10, 10);
   --secondary-bg-color: rgb(20, 20, 20);
+  --tertiary-bg-color: rgb(35, 35, 35);
   --primary-txt-color: white;
-  --secondary-txt-color: black;
+  --secondary-txt-color: rgb(200, 200, 200);
 }
 
 *{
@@ -16,4 +17,22 @@ html {
 
 body{
   font-family: monospace;
+}
+
+.page-header {
+  position: absolute;
+  top: min(4vh, 50px);
+  left: min(4vw, 50px);
+  font-size: 4rem;
+  color: var(--primary-txt-color);
+}
+
+.page-header::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary-txt-color);
+  margin-top: 0.5rem;
+  border-radius: 2px;
 }

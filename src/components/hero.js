@@ -1,13 +1,14 @@
 import { Anchor } from './anchor';
+import { Typewriter } from './Dynamic/typewrite';
 import './hero.css';
 
 export const HeroSection = () => {
     return (
         <section className="hero-section">
             <div className="hero-main">
-                <h1>Oliver Young</h1>
-                <p>Software Engineer | Student of the University of Birmingham</p>
-                <Anchor fontSize={'1.3rem'} link={"#about"} text={"See More ↓"}></Anchor>
+                <h1><Typewriter text={"Oliver Young"}></Typewriter></h1>
+                <p><Typewriter text={"Software Engineer | Student of the University of Birmingham"} startDelay={700}></Typewriter></p>
+                <Typewriter isLink={true} link={"#about"} className={"see-more"} text={"See More ↓"} fontSize={"2rem"} startDelay={4000}></Typewriter>
             </div>
         </section>
     )

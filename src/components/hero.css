@@ -6,6 +6,7 @@
     width: 100vw;
     background-color: var(--primary-bg-color);
     color: var(--primary-txt-color);
+    z-index: 200;
 }
 
 .hero-main{
@@ -21,4 +22,9 @@
 
 .hero-main p{
     font-size: 1.4rem;
+    color: var(--secondary-txt-color);
+}
+
+.see-more{
+    font-size: 2rem;
 }
