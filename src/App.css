@@ -19,6 +19,10 @@ body{
   font-family: monospace;
 }
 
+body, button, .App {
+  cursor: none;
+}
+
 .page-header {
   position: absolute;
   top: min(4vh, 50px);

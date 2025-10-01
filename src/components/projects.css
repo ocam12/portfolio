@@ -1,16 +1,8 @@
-#skills{
+#projects{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: var(--primary-bg-color);
-}
-
-.skills-container{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
 }

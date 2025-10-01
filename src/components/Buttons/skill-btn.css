@@ -1,0 +1,19 @@
+.skill-btn{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent;
+    color: var(--primary-txt-color);
+    border: 3px solid var(--primary-txt-color);
+    transition: 0.5s ease;
+}
+
+.skill-btn:hover{
+    background-color: var(--primary-txt-color);
+    color: var(--primary-bg-color);
+}
+
+.skill-btn svg{
+    width: 70%;
+}
