@@ -102,7 +102,7 @@ export const AboutSection = () => {
                     />
                 ))}
             </div>
-            <Anchor className="skills-link" fontSize={'1.4rem'} link={"#skills"} text={"Skills ↓"}></Anchor>
+            {/*<Anchor className="skills-link" fontSize={'1.4rem'} link={"#skills"} text={"Skills ↓"}></Anchor>*/}
         </section>
     )
 }

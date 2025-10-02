@@ -1,4 +1,4 @@
-.hero-section{
+.hero-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,25 +6,38 @@
     width: 100vw;
     background-color: var(--primary-bg-color);
     color: var(--primary-txt-color);
-    z-index: 200;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
-.hero-main{
+.hero-main {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
+    align-items: center;
+    gap: 20px;
+    max-width: 90vw;
 }
 
-.hero-main h1{
-    font-size: 4rem;
+.hero-main h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1.4;
 }
 
-.hero-main p{
-    font-size: 1.4rem;
+.hero-main p {
+    font-size: clamp(1rem, 3vw, 1.4rem);
     color: var(--secondary-txt-color);
+    line-height: 1.4;
 }
 
-.see-more{
-    font-size: 2rem;
+.see-more {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+    .hero-main {
+        gap: 15px;
+    }
 }

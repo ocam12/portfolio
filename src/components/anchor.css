@@ -3,13 +3,12 @@
     color: var(--primary-txt-color);
     text-decoration: none;
     border-bottom: 2px solid transparent;
+    cursor: none;
     transition: 0.2s ease;
 }
 
 .anchor:hover{
     border-bottom: 2px solid var(--primary-txt-color);
-    padding-left: 4px;
-    padding-right: 4px;
 }
 
 .anchor:active{
