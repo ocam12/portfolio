@@ -9,24 +9,6 @@
     box-sizing: border-box;
 }
 
-#about h2 {
-    position: absolute;
-    top: min(4vh, 50px);
-    left: min(4vw, 50px);
-    font-size: 4rem;
-    color: var(--primary-txt-color);
-}
-
-#about h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 4px;
-    background: var(--primary-txt-color);
-    margin-top: 0.5rem;
-    border-radius: 2px;
-}
-
 .profile-container {
     position: relative;
     display: flex;

@@ -30,6 +30,7 @@
 
 @media(max-width: 1100px){
     .projects-intro{
+        width: 80vw;
         max-width: 80vw;
     }
 }

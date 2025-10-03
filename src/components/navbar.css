@@ -2,7 +2,22 @@
     position: fixed;
     top: min(3vh, 40px);
     right: min(3vw, 40px);
+    z-index: 9999;
+}
+
+.navbar-btn-container{
     display: flex;
     gap: 50px;
-    z-index: 10000;
+}
+
+@media(min-width: 651px){   /*Remove hamburger menu*/
+    .navbar-btn-container{
+        display: flex;
+    }
+}
+
+@media(max-width: 650px){   /*Introduce hamburger menu*/
+    .navbar-btn-container{
+        display: none;
+    }
 }
