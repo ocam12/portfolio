@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react"
 import "./about.css"
-import { Anchor } from "./anchor"
-import { Typewriter } from "./Dynamic/typewrite"
-import { Header } from "./header";
+import { Anchor } from "../anchor"
+import { Typewriter } from "../Dynamic/typewrite"
+import { Header } from "../header";
 
 //array of all image sources
 const images = [
@@ -74,17 +74,16 @@ export const AboutSection = () => {
     return (
         <section id="about">
             <Header text={"About"}></Header>
-            
             <div className="profile-container">
                 <div className="profile-main">
                     <div className="profile-info">
-                        <Typewriter className="profile-caption" text={"Hello there! My name is Oliver Young (better known as Olly)."} speed={30}></Typewriter>
-                        <Typewriter className={"profile-subheader"} text={"Background"} speed={10} startDelay={2800}></Typewriter>
-                        <Typewriter className={"profile-text"} speed={10} startDelay={3300} text={"I've been a student at the University of Birmingham since 2022, and in that time I have grown from a complete novice at software engineering into a competent programmer with a multitude of different skills."}></Typewriter>
-                        <Typewriter className={"profile-subheader"} text={"Work Experience"} speed={10} startDelay={5700}></Typewriter>
-                        <Typewriter className={"profile-text"} speed={10} startDelay={6100} text={"During my time off of my degree I have spent my summers working as a Duty Manager at my local pool - Cirencester Open Air, where I enjoy leading, and working alongside, a competent team of lifeguards. Together we deal with a variety of challenges (especially during those heatwaves!)."}></Typewriter>
-                        <Typewriter className={"profile-subheader"} text={"Beyond The Usual"} speed={10} startDelay={9300}></Typewriter>
-                        <Typewriter className={"profile-text"} speed={10} startDelay={9700} text={"In my free time I like to keep fit at the gym or the pool, as well as learn new skills like playing Pickleball or speaking Italian - sempre impararo!"}></Typewriter>
+                        <Typewriter className="profile-caption" text={"My name is Oliver Young (better known as Olly)."} speed={30}></Typewriter>
+                        <Typewriter className={"profile-subheader"} text={"Background"} speed={30} startDelay={2300}></Typewriter>
+                        <Typewriter className={"profile-text"} speed={10} startDelay={3000} text={"I've been a student at the University of Birmingham since 2022, and in that time I have grown from a complete novice at software engineering into a competent programmer with a multitude of different skills."}></Typewriter>
+                        <Typewriter className={"profile-subheader"} text={"Work Experience"} speed={30} startDelay={5500}></Typewriter>
+                        <Typewriter className={"profile-text"} speed={10} startDelay={6300} text={"During my time off of my degree I have spent my summers working as a Duty Manager at my local open air pool, where I enjoy leading, and working alongside, a competent team of lifeguards. Together we deal with a variety of challenges (especially during those heatwaves!)."}></Typewriter>
+                        <Typewriter className={"profile-subheader"} text={"Beyond The Usual"} speed={30} startDelay={9500}></Typewriter>
+                        <Typewriter className={"profile-text"} speed={10} startDelay={10000} text={"In my free time I like to keep fit at the gym or the pool, as well as learn new skills like playing Pickleball or speaking Italian - sempre impararo! I also love travelling and exploring new places - my favourite experience so far has definitley been sailing across Lake Como in Italy."}></Typewriter>
                     </div>
                 </div>
             </div>
@@ -102,7 +101,7 @@ export const AboutSection = () => {
                     />
                 ))}
             </div>
-            <Anchor className="skills-link" fontSize={'1.4rem'} link={"#skills"} text={"Skills ↓"}></Anchor>
+            <Anchor className="next-page-link" fontSize={'1.4rem'} link={"#skills"} text={<>Contact Me <span className="arrow">↓</span></>}></Anchor>
         </section>
     )
 }

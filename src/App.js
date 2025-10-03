@@ -1,10 +1,12 @@
 import './App.css';
-import { AboutSection } from './components/about';
-import { Button } from './components/button';
+import { AboutSection } from './components/Sections/about';
+import { CustomCursor } from './components/Dynamic/customCursor';
 import { ScrollProgressBar } from './components/Dynamic/scrollProgress';
-import { HeroSection } from './components/hero';
+import { HeroSection } from './components/Sections/hero';
 import { Navbar } from './components/navbar';
-import { SkillsSection } from './components/skills';
+import { ProjectsSection } from './components/Sections/projects';
+import { SkillsSection } from './components/Sections/skills';
+import { ContactSection } from './components/Sections/contact';
 
 function App() {
   return (
@@ -13,9 +15,12 @@ function App() {
         <ScrollProgressBar></ScrollProgressBar>
         <Navbar></Navbar>
         <HeroSection></HeroSection>
-        <AboutSection></AboutSection>
         <SkillsSection></SkillsSection>
+        <ProjectsSection></ProjectsSection>
+        <AboutSection></AboutSection>
+        <ContactSection></ContactSection>
       </header>
+      <CustomCursor></CustomCursor>
     </div>
   );
 }

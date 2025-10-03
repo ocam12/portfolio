@@ -1,0 +1,153 @@
+.project-slide{
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    max-width: 1600px;
+    border: 2px solid var(--primary-txt-color);
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.project-slide.reverse{
+    flex-direction: row-reverse;
+}
+
+.project-slide img{
+    object-fit: contain;
+    width: 70%;
+    max-width: 1200px;
+    filter: grayscale(0.1);
+    object-fit: cover;
+}
+
+.project-slide h1{
+    width: 85%;
+    font-size: 3rem;
+    color: var(--primary-txt-color);
+}
+
+.project-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vh;
+    width: 30%;
+    padding: 25px 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.project-buttons{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.git-button, .live-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    height: 50px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 2rem;
+    background-color: transparent;
+    color: var(--primary-txt-color);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    cursor: none;
+}
+
+.git-button:hover, .live-button:hover{
+    scale: 1.02;
+    opacity: 0.9;
+}
+
+.git-button{
+    background-color: var(--primary-txt-color);
+    color: var(--primary-bg-color);
+}
+
+.live-button{
+    border: 1px solid var(--primary-txt-color);
+}
+
+.project-skills-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.skill-icon{
+    box-sizing: border-box;
+    color: var(--primary-txt-color);
+    width: min(5vw, 70px);
+    height: min(5vw, 70px);
+    padding: 10px;
+    border: 2px solid var(--primary-txt-color);
+    border-radius: 50%;
+}
+
+@media(max-width: 1800px){
+    .project-slide h1{
+        font-size: 2.4rem;
+    }
+}
+
+@media(max-width: 1600px){
+    .project-slide h1{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 1200px){
+    .project-slide{
+        flex-direction: column;
+        width: 90vw;
+        min-height: 50vh;
+    }
+    .project-slide.project-slide.reverse{
+        flex-direction: column;
+    }
+    .project-slide img{
+        width: 100%;
+    }
+
+    .project-slide h1{
+        width: 90%;
+        font-size: min(8vw, 2.5rem);
+        color: var(--primary-txt-color);
+    }
+
+    .project-info-container{
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .project-skills-container{
+        grid-template-columns: repeat(8, auto);
+        justify-content: center;
+    }
+
+    .skill-icon{
+        width: max(8vw, 50px);
+        height: max(8vw, 50px);
+    }
+}
+
+@media(max-width: 600px){
+    .project-skills-container{
+        grid-template-columns: repeat(5, auto);
+    }
+    .git-button, .live-button{
+        font-size: 1.2rem;
+    }
+}

@@ -2,6 +2,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(90deg, var(--secondary-bg-color), var(--tertiary-bg-color));
     overflow: hidden; /* ensures images don’t scroll out */
     padding-top: 15vh;
@@ -74,16 +75,6 @@
     font-size: 1.6rem;
     color: var(--primary-txt-color);
 }
-
-.skills-link {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 5vh;
-    text-align: center;
-    z-index: 500;
-}
-
 
 .overlay-container {
     position: absolute;

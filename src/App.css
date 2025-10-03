@@ -11,12 +11,23 @@
   padding: 0;
 }
 
+*:focus{
+    outline: 2px solid rgb(0, 217, 255);
+    outline-offset: 3px;
+    box-shadow: 0 0 20px rgb(0, 217, 255);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body{
   font-family: monospace;
+  overflow-x: hidden;
+}
+
+body, button, .App {
+  cursor: none;
 }
 
 .page-header {
@@ -35,4 +46,33 @@ body{
   background: var(--primary-txt-color);
   margin-top: 0.5rem;
   border-radius: 2px;
+}
+
+.next-page-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5vh;
+    text-align: center;
+    z-index: 500;
+}
+
+.arrow{
+  display: inline-block;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100%{
+    transform: translateY(-5px);
+  }
+  50%{
+    transform: translateY(2px);
+  }
+}
+
+@media(max-width: 500px){
+  .page-header {
+    font-size: 3rem;
+  }
 }
