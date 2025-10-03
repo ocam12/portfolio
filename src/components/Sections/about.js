@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react"
-import "./about.css"
-import { Anchor } from "../anchor"
-import { Typewriter } from "../Dynamic/typewrite"
+import { useRef, useState } from "react";
+import { Anchor } from "../anchor";
+import { Typewriter } from "../Dynamic/typewrite";
 import { Header } from "../header";
+import "./about.css";
 
 //array of all image sources
 const images = [

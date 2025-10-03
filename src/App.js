@@ -1,4 +1,3 @@
-import './App.css';
 import { AboutSection } from './components/Sections/about';
 import { CustomCursor } from './components/Dynamic/customCursor';
 import { ScrollProgressBar } from './components/Dynamic/scrollProgress';
@@ -7,6 +6,7 @@ import { Navbar } from './components/navbar';
 import { ProjectsSection } from './components/Sections/projects';
 import { SkillsSection } from './components/Sections/skills';
 import { ContactSection } from './components/Sections/contact';
+import './App.css';
 
 function App() {
   return (

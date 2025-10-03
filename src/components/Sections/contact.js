@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./contact.css";
 import { Header } from "../header";
 import { Anchor } from "../anchor";
+import "./contact.css";
 
 const linkedInIcon = () => (
     <svg viewBox="0 0 128 128">

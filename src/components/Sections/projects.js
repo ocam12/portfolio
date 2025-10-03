@@ -2,8 +2,8 @@ import { Anchor } from '../anchor';
 import { ProjectSlide } from '../Dynamic/projectSlide';
 import { Typewriter } from '../Dynamic/typewrite';
 import { Header } from '../header';
-import './projects.css';
 import { icons } from './skills';
+import './projects.css';
 
 const projectSkills = Object.fromEntries(icons.map(obj => [obj.name, obj.icon]));
 

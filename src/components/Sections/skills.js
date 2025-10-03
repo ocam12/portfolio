@@ -1,12 +1,9 @@
-import { circIn } from 'framer-motion';
 import { SkillButton } from '../Buttons/skill-btn'
 import { Header } from '../header';
-import './skills.css';
 import { motion } from "framer-motion";
 import { Anchor } from '../anchor';
 import { useState } from 'react';
-
-
+import './skills.css';
 
 const htmlIcon = () => (
   <svg viewBox="0 0 128 128">

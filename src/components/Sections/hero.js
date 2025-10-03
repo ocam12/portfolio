@@ -1,4 +1,3 @@
-import { Anchor } from '../anchor';
 import { Typewriter } from '../Dynamic/typewrite';
 import './hero.css';
 
