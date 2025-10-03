@@ -23,12 +23,12 @@ export const ProjectSlide = ({project, index}) => {
             style={{x, opacity}}
             className={slideClass}
         >
-            <img src={project.image}></img>
+            <img src={project.image} alt={"Image showing " + project.title}></img>
             <div className="project-info-container">
                 <h1>{project.title}</h1>
                 <div className="project-buttons">
-                    {project.gitLink && <a href={project.gitLink} target="_BLANK" className="git-button hover-mouse">Git</a>}
-                    {project.deployLink && <a href={project.deployLink} target="_BLANK" className="live-button hover-mouse">Live</a>}
+                    {project.gitLink && <a href={project.gitLink} target="_BLANK" rel="noreferrer" className="git-button hover-mouse">Git</a>}
+                    {project.deployLink && <a href={project.deployLink} target="_BLANK" rel="noreferrer" className="live-button hover-mouse">Live</a>}
                 </div>
                 <div className="project-skills-container">
                     {project.skills.map((SkillComponent, i) => (

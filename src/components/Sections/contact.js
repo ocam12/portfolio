@@ -67,7 +67,7 @@ export const ContactSection = () => {
                 </address>
                 <div className="contact-icon-container">
                     {contactIcons.map((icon, i) => (
-                        <a key={i} className="contact-icon hover-mouse" href={icon.link} target="_BLANK" aria-label={icon.ariaLabel} tabIndex="0">{icon.icon()}</a>
+                        <a key={i} className="contact-icon hover-mouse" href={icon.link} target="_BLANK" rel="noreferrer" aria-label={icon.ariaLabel} tabIndex="0">{icon.icon()}</a>
                     ))}
                 </div>
                 
