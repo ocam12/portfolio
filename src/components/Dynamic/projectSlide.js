@@ -23,7 +23,7 @@ export const ProjectSlide = ({project, index}) => {
             style={{x, opacity}}
             className={slideClass}
         >
-            <img src={project.image} alt="Image showing a project"></img>
+            <img src={project.image} alt={`Screenshot of ${project.title}`}></img>
             <div className="project-info-container">
                 <h1>{project.title}</h1>
                 <div className="project-buttons">
