@@ -18,7 +18,13 @@ export const Navbar = () => {
                 <Anchor fontSize={fontSize} link={"#skills"} text={"Skills"}></Anchor>
                 <Anchor fontSize={fontSize} link={"#projects"} text={"Projects"}></Anchor>
                 <Anchor fontSize={fontSize} link={"#about"} text={"About"}></Anchor>
-                <Anchor fontSize={fontSize} link={""} text={"CV"}></Anchor>
+                <Anchor 
+                    fontSize={fontSize} 
+                    link={"/CV_Oliver_Young.pdf"} 
+                    text={"CV"} 
+                    target="_BLANK"
+                    rel="noreferrer"
+                ></Anchor>
                 <Anchor fontSize={fontSize} link={"#contact"} text={"Contact"}></Anchor>
             </div>
             <button className="hamburger-button hover-mouse" onClick={toggleHamburgerMenu} tabIndex="0">

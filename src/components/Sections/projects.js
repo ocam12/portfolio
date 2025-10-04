@@ -41,7 +41,7 @@ const projects = [
         deployLink: "https://weatherdiscover.netlify.app"
     },
     {
-        title: "IDE For HTML, CSS, And JavaScriptCode",
+        title: "IDE For HTML, CSS, And JavaScript Code",
         description: "Code Editor duh",
         image: "/project_images/CodeEditor1.png",
         skills: [projectSkills["HTML"], projectSkills["CSS"], projectSkills["JavaScript"], projectSkills["Git"]],

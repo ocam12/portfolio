@@ -2,8 +2,8 @@
   --primary-bg-color: rgb(10, 10, 10);
   --secondary-bg-color: rgb(20, 20, 20);
   --tertiary-bg-color: rgb(35, 35, 35);
-  --primary-txt-color: white;
-  --secondary-txt-color: rgb(200, 200, 200);
+  --primary-txt-color: rgb(240, 240, 240);
+  --secondary-txt-color: rgb(220, 220, 220);
 }
 
 *{

@@ -1,12 +1,10 @@
 #skills{
-    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: 100%;
     background-color: var(--secondary-bg-color);
 }
 
@@ -17,6 +15,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    width: 40%;
 }
 
 #skillText{
@@ -49,7 +48,7 @@
 
 @media (max-width: 1000px){
     .skills-container{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 0.9fr);
         row-gap: 2vh;
         column-gap: 10vw;
     }
