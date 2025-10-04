@@ -1,9 +1,9 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react"; // 👈 Ensure useEffect is imported
 import { Anchor } from "../anchor";
 import { Header } from "../header";
 import "./about.css";
 
-//array of all image sources
+//array of all image sources (assuming this is your full 48 image array)
 const images = [
     "/about_images/about_image.jpg",
     "/about_images/about_image2.jpg",
@@ -56,11 +56,19 @@ const images = [
 ];
 
 export const AboutSection = () => {
-    //const [mouseImages, setMouseImages] = useState([]);   - caused lag
-
+    // const [mouseImages, setMouseImages] = useState([]);   - removed for performance
+    
     const overlayRef = useRef(null); 
     const lastPos = useRef({ x: null, y: null }); //track last image position
     const mouseThreshold = 100;         //threshold mouse needs to move to trigger new image   
+    
+    useEffect(() => {
+        //Force the browser to fetch and cache all images right away
+        images.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+        });
+    }, []);
     
     const handleMouseMove = (e) => {
         //Stop execution if the container is not yet referenced
@@ -85,7 +93,7 @@ export const AboutSection = () => {
 
         const src = images[Math.floor(Math.random() * images.length)];      //gets random image
         
-        //Create a new image element
+        //Create a new image element (optimized logic)
         const imgElement = document.createElement('img');
         //Set properties and styles
         imgElement.className = 'overlay-img';
@@ -97,7 +105,9 @@ export const AboutSection = () => {
 
         //Timeout to trigger the fade out
         setTimeout(() => {
-            imgElement.classList.add('exit');
+            if (overlayRef.current.contains(imgElement)) {
+                 imgElement.classList.add('exit');
+            }
         }, 800); //image lasts for 800ms
 
         //Timeout to remove the element
