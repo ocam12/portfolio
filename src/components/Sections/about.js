@@ -1,6 +1,5 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 import { Anchor } from "../anchor";
-import { Typewriter } from "../Dynamic/typewrite";
 import { Header } from "../header";
 import "./about.css";
 
