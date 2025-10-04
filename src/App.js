@@ -7,6 +7,7 @@ import { ProjectsSection } from './components/Sections/projects';
 import { SkillsSection } from './components/Sections/skills';
 import { ContactSection } from './components/Sections/contact';
 import './App.css';
+import { FooterSection } from './components/Sections/footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <ProjectsSection></ProjectsSection>
         <AboutSection></AboutSection>
         <ContactSection></ContactSection>
+        <FooterSection></FooterSection>
       </header>
       <CustomCursor></CustomCursor>
     </div>

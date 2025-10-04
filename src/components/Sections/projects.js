@@ -63,7 +63,7 @@ export const ProjectsSection = () => {
         <section id="projects">
             <Header text={"Projects"}></Header>
             <div className="projects-intro">
-                <Typewriter text={"Here is a collection of some of my favourite projects that demonstrate my skills in software development, data handling and design. Each project has had its own challenges, but learning how to tackle them has been incredibly rewarding. Take a look!"} speed={20}></Typewriter>
+                <Typewriter text={"Here is a collection of some of my favourite projects that demonstrate my skills in software development, data handling and design. Each project has had its own challenges, but learning how to tackle them has been incredibly rewarding. Scroll down and take a look!"} speed={20}></Typewriter>
             </div>
             <div className="projects-container">
                 {projects.map((project, i) => (

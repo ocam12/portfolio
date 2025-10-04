@@ -25,7 +25,7 @@ export const Navbar = () => {
                     target="_BLANK"
                     rel="noreferrer"
                 ></Anchor>
-                <Anchor fontSize={fontSize} link={"#contact"} text={"Contact"}></Anchor>
+                <Anchor fontSize={fontSize} link={"#contact"} text={"Contact Me"}></Anchor>
             </div>
             <button className="hamburger-button hover-mouse" onClick={toggleHamburgerMenu} tabIndex="0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="68" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
